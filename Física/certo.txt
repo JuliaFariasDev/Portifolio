@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Física</title>
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--custom css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Portifolio</a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a> <!-- Correção aqui -->
+        <a href="#services">Services</a>
+        <a href="#portifolio">Portifolio</a>
+        <a href="#contact">contact</a>
+    </nav>
+  </header>  
+
+  <!--home section design-->
+  <section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Jonh Kendric</h1>
+        <h3>And I'm a <span>Frontend Developer</span></h3>
+        <p>Some introduction text...</p>
+        <div class="social-media">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="#"><i class='bx bxl-tiktok' ></i></a>
+        </div>
+       <a href="#" class="bnt">Download CV</a> 
+    </div>
+    <div class="home-img">
+      <img src="img/img2.png" alt="">
+    </div>
+  </section>
+  
+  <!--about section design-->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="img/img2.png" alt="">
+    </div> 
+
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <h3>Frontend Developer</h3>
+      <p>Some information about you...</p>
+      <a href="#" class="bnt">Read More</a>
+    </div>
+  </section>
+  
+  <!--custom js-->
+  <script src="js/script.js"></script>
+</body>
+</html>
