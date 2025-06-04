@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+
+<!--BACKUP-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estante Viva - Cadastro</title>
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="icon" href="clip/LOGO ESTANTE (V).png">
+
+    <!--Maitree-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--Kanit-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Maitree:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+            <!-- BARRA DE NAVEGAÇÃO LATERAL -->
+    <div class="barra_lateral">
+        
+        <!-- Logo centralizada -->
+        <div class="logo-container">
+            <img src="IMGS/Estrutura/LOGO ESTANTE (B).png" alt="Logo" class="logo">
+        </div>
+
+        <!-- Lista de itens do menu -->
+        <ul>
+            <li class="list active">
+                <a href="../Pagina inicial - Alunos/index.html">
+                    <span class="icon">
+                        <img src="IMGS/Icons/01-Alunos.png" class="menu-icon" data-hover="IMGS/Icons/01-AlunosHover.png" data-default="IMGS/Icons/01-Alunos.png">
+                    </span>
+                    <span class="title">Alunos</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="../Emprestimos/index.html">
+                    <span class="icon">
+                        <img src="IMGS/Icons/02-Emprestimos.png" class="menu-icon" data-hover="IMGS/Icons/02-EmprestimosHover.png" data-default="IMGS/Icons/02-Emprestimos.png">
+                    </span>
+                    <span class="title">Empréstimos</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="../Devoluções/index.html">
+                    <span class="icon">
+                        <img src="IMGS/Icons/03-Devoluções.png" class="menu-icon" data-hover="IMGS/Icons/03-DevoluçõesHover.png" data-default="IMGS/Icons/03-Devoluções.png">
+                    </span>
+                    <span class="title">Devoluções</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="../Acervo/index.html">
+                    <span class="icon">
+                        <img src="IMGS/Icons/04-Acervo.png" class="menu-icon" data-hover="IMGS/Icons/04-AcervoHover.png" data-default="IMGS/Icons/04-Acervo.png">
+                    </span>
+                    <span class="title">Acervo</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="Index.html">
+                    <span class="icon">
+                        <img src="IMGS/Icons/05-Cadastro.png" class="menu-icon" data-hover="IMGS/Icons/05-CadastroHover.png" data-default="IMGS/Icons/05-Cadastro.png">
+                    </span>
+                    <span class="title">Cadastro</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <img src="IMGS/Icons/06-AdminSite.png" class="menu-icon" data-hover="IMGS/Icons/06-AdminSiteHover.png" data-default="IMGS/Icons/06-AdminSite.png">
+                    </span>
+                    <span class="title">Site Alunos</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+            <!-- TITLE MAIN -->
+    <div id="div-title">
+        <h2 class="title-main-page">Cadastro</h2>  
+
+    </div>
+        <!-- CARDE CADASTRO -->
+
+    <section class="section1">
+        
+    <form>
+        <div id="div-cadastro">
+            
+            <br>
+            <div class="links-cadastro">
+                
+                <!-- SUB DIV 01-->
+                <div class="sub-div-links-cadastro">
+                    <img src="clip/livro aberto.svg" class="img01-link-redicionamento">
+                <input type="button" class="link-redicionamento" value="    Livros" onclick="mostrarCadastro('livros')">
+                </div>
+
+                <!-- SUB DIV 02-->
+                <div class="sub-div-links-cadastro">
+                    <img src="clip/person-fill.svg" class="img02-link-redicionamento">
+                <input type="button" class="link-redicionamento" value="     Pessoa" onclick="mostrarCadastro('individuos')">
+                </div>
+            </div>
+
+            <br><hr id="line-divisoes"><!-- LINHA DIVISÃO -->
+
+                    <br> <!--Nome do Livro-->
+                <div id="cadastro-livros">
+                    <h3 class="title-endereco-cadastro">Nome do Livro:</h3>
+                        <input type="text" placeholder="   Digite aqui o nome do livro" required class="box-text-input" title="Nome do livro">
+
+                            <br><br>
+
+                <div id="div-infomacoes-cadastro"> 
+                    
+                            <!--Autor-->
+                    <div>
+                        <h3 class="title-endereco-cadastro">Nome do autor:</h3>
+                                <input type="text" placeholder="   Digite aqui o nome do autor" required class="box-text-input-alternative" title="Nome do autor">
+                    </div>
+
+                            <br><!--Exemplar-->
+                    <div>
+                        <h3 class="title-endereco-cadastro">Exemplar:</h3>
+                                <input type="number" placeholder="   Exemplar" required class="box-text-input-alternative" title="N° do exemplar">
+                    </div>
+
+                            <br><!--Genêro-->
+                    <div>
+                        <h3 class="title-endereco-cadastro">Genêro do livro:</h3>
+                                <select id="genero-livro" name="genero" required class="box-text-input-alternative" title="Selecione o genêro do livro">
+                                    <option value="M">Selecione</option>
+                                    <option value="M">Genêro 01</option>
+                                    <option value="T">Genêro 02</option>
+                                    <option value="N">Genêro 03</option>
+                                </select>
+                    </div>
+
+                           <br> <!--Estante-->
+                    <div>
+                        <h3 class="title-endereco-cadastro">Estante:</h3>
+                                <select id="localizacao" name="localizacao" required class="box-text-input-alternative" title="Selecione a estante do livro">
+                                    <option value="M">Selecione</option>
+                                    <option value="M">Estante 01</option>
+                                    <option value="T">Estante 02</option>
+                                    <option value="N">Estante 03</option>
+                                </select>
+                    </div>
+
+                          <br>  <!--Código do livro-->
+                    <div>
+                    <h3 class="title-endereco-cadastro">Código do livro:</h3>
+                    <input type="text" placeholder="   Código do livro" required class="box-text-input-alternative">
+                </div>
+                
+                            <br><!--Botões auxiliares-->
+
+                <div id="div-button-auxiliar-cadastro">
+
+                    <div class="sub-div-auxiliar-cadastro">
+                        <img src="clip/scan.svg"  class="img-button1-auxiliar-cadastro">
+                            <input type="button" class="button-auxiliar-cadastro" id="button-auxiliar-cadastro">
+                    </div>
+
+                    <div class="sub-div-auxiliar-cadastro">
+                        <img src="clip/upc.svg"  class="img-button2-auxiliar-cadastro">
+                            <input type="button" class="button-auxiliar-cadastro"  id="button-auxiliar-cadastro">
+                    </div>
+
+                    <div class="sub-div-auxiliar-cadastro">
+                        <img src="clip/clip.svg"  class="img-button3-auxiliar-cadastro">
+                            <input type="button" class="button-auxiliar-cadastro"  id="button-auxiliar-cadastro">
+                    </div>
+                <!--
+                    <button class="button-auxiliar-cadastro" >
+                        <img src="clip/scan.svg"  class="img-button1-auxiliar-cadastro">
+                    </button>
+
+                    <button class="button-auxiliar-cadastro" >
+                        <img src="clip/upc.svg" class="img-button2-auxiliar-cadastro">
+                    </button>
+
+                    <button class="button-auxiliar-cadastro" >
+                        <img src="clip/clip.svg"  class="img-button3-auxiliar-cadastro">
+                    </button>
+                -->
+                </div>
+            </div> 
+        </div>
+
+            <!--Cadastro Indivíduos-->
+
+    <div id="cadastro-individuos" style="display: none;">
+        <div id="div-tipo-individuo">
+            <label class="label-selection-individuos"><input type="radio" id="radio1" value="aluno" name="tipo" onclick="mostrarCampos('aluno')"><span class="radio-label"> Aluno </span></label>
+
+            <label class="label-selection-individuos"><input type="radio" id="radio2" value="funcionario" name="tipo" onclick="mostrarCampos('funcionario')"><span class="radio-label"> Funcionário  </span> </label>
+
+            <label class="label-selection-individuos"><input type="radio" id="radio3" value="curso" name="tipo" onclick="mostrarCampos('curso')"><span class="radio-label bnt-3"> Cursos </span></label>
+    </div>
+    <br>
+
+        <!-- Cadastro Aluno -->
+         
+    <div id="form-aluno" class="form-individuo" style="display: none;">
+
+        <h3 class="title-endereco-cadastro">Nome do aluno:</h3>
+            <input type="text" placeholder="   Digite aqui o nome do aluno"  class="box-text-input">
+                <br>
+    <div id="div-infomacoes-cadastro">
+        <div>
+            <h3 class="title-endereco-cadastro">Turma:</h3>
+                <select class="box-text-input-alternative">
+                    <option value="M">Selecione</option>
+                    <option value="A">Administração</option>
+                    <option value="E">Estética</option>
+                    <option value="F">Finanças</option>
+                    <option value="EN">Enfermagem</option>
+                    <option value="IN">Informática</option>
+                </select>
+        </div>
+                <br><!--Série escolar-->
+        <div>
+            <h3 class="title-endereco-cadastro">Série:</h3>
+                <select class="box-text-input-alternative">
+                    <option value="M">Selecione</option>
+                    <option value="1">1º</option>
+                    <option value="2">2º</option>
+                    <option value="3">3º</option>
+                </select>
+        </div>
+                <br>
+        <div>
+            <h3 class="title-endereco-cadastro">Telefone:</h3>
+                <input type="tel" placeholder="   85 999999999"  class="box-text-input ">
+        </div>
+    </div>
+</div>
+        <!-- Cadastro Funcionário -->
+    <div id="form-funcionario" class="form-individuo" style="display: none;">
+
+        <h3 class="title-endereco-cadastro">Nome do funcionário:</h3>
+            <input type="text" placeholder="   Digite aqui o nome do funcionário"  class="box-text-input">
+        
+        <h3 class="title-endereco-cadastro">Telefone</h3>
+            <input type="tel" placeholder="   Digite aqui o telefone"  class="box-text-input">
+    </div>
+
+    <!-- Cadastro Curso -->
+    <div id="form-curso" class="form-individuo" style="display: none;">
+
+        <h3 class="title-endereco-cadastro">Nome do curso:</h3>
+            <input type="text" placeholder="   Digite aqui o nome do curso"  class="box-text-input">
+
+    </div>
+    </div>
+        <br> <hr id="line-divisoes"> <br>
+
+            <!--Botão enviar-->
+        <div class="div-button-submit">
+            <button class="button-submit">salvar</button>
+    </div>
+</div>
+      
+</form>
+</section>
+    <script src="Main.js"></script>
+</body>
+</html>

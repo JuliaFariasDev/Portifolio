@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #e0e0e0;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 900px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container {
+            width: 40%;
+            background-color: #c0c0c0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .form-group input[type="submit"] {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border: none;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        .table-container {
+            width: 60%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #555;
+            color: #fff;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            font-size: 12px;
+            cursor: pointer;
+            border: none;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        .btn-edit {
+            background-color: #4CAF50;
+        }
+
+        .btn-delete {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Formulário de Cadastro -->
+        <div class="form-container">
+            <h2>Cadastro de Alunos</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Cadastro">
+                </div>
+            </form>
+        </div>
+
+        <!-- Tabela de Alunos -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Maria Silva</td>
+                        <td>(11) 1234-5678</td>
+                        <td>maria@email.com</td>
+                        <td>
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete">Excluir</button>
+                        </td>
+                    </tr>
+                    <!-- Adicione mais linhas conforme necessário -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
