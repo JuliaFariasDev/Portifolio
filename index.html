@@ -1,247 +1,518 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>responsivo</title>
-    <!--font answer cdn link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="CSS/topbar.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="Formulário/formulario01.css">
+    <title>Automação de Marketing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https//cdnjs.cloudfare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
-    <!-- nav section starts -->
-    <header>
 
-        <div class="user">
-            <img src="img/img01.jpeg" alt="#">
-            <h3 class="name">Julia farias</h3>
-            <p class="post"> Desenvolvedora Back End</p>
-        </div>
-
-        <nav class="navbar">
-           <ul>
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#education">Educação</a></li>
-            <li><a href="#portifolio">portifólio</a></li>
-            <li><a href="#contact">contato</a></li>
-           </ul>
-        </nav>
-
-
-    </header>
-   <!-- nav section ends -->
-
-    <div id="menu" class="fas fa-bars"></div>
-
-    <!-- home section starts -->
-    
-    <section class="home" id="home">
-      <h3>Olá!</h3>
-      <h1>Eu sou  <span>Julia Farias</span></h1>
-      <p>Olá! Eu sou <span>Julia Farias</span> e sou apaixonada por desenvolver a parte funcional dos sites.  
-Desde que tive meu primeiro contato com a área da informática, me identifiquei com o back-end, pois sempre tive curiosidade em entender como os sistemas funcionam por trás das telas.  
-Gosto de transformar lógica em soluções eficientes e dar vida à estrutura que mantém uma aplicação no ar.
-      </p>
-      <a href="#about"><button class="btn">sobre mim <i class="fas fa-user"></i></button></a>
+    <section class="background-image" id="home">
+    <div class="texts">
+    <div class="text">
+    <h1>Automação de <span>Marketing<span></h1></div>
+        <div class="texto"><p>Chegue até seus clientes no momento certo com a mensagem ideal, sem complicações.
+             <strong>Automatize processos</strong>, economize tempo e foque no que realmente importa: <strong>crescer o seu negócio</strong>.</p></div>
+    </div><!--Texts-->
+    <div class="overlay"></div>
     </section>
 
 
-    <!-- home section starts -->
 
-     <!--about section starts-->
+<!-- Header -->
+ <header>
+<div class="header-container">
+    <div class="logo">
+        <img src="img/logo-removebg-preview.png" alt="#"> 
+    </div><!-- Logo -->
+    <nav id="mainNav">
+        <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#persona" class="nav-link">Persona</a></li>
+            <li><a href="Dashboard/index.html" class="nav-link">Ferramentas</a></li>
+            <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+    </nav>
+    <script src="JavaScript/headercor.js"></script>
+</div><!-- Pai -->
 
-    <section class="about" id="about">
-
-      <h1 class="heading"><span>Sobre</span>mim</h1>
-
-      <div class="row">
-
-     <div class="info">
-        <h3> <span> nome : </span> Julia Farias</h3>
-        <h3><span> idade : </span> 17</h3>
-        <h3><span> post : </span> desenvolvedora de back end</h3>
-        <h3><span> Linguagem : </span> JavaScript</h3>
-       
-
-      <div class="counter">
-
-        <div class="box">
-            <span>2+</span>
-            <h3>Anos de experiências</h3>
+   <!-- Topbar -->
+   <section>
+    <div class="topbar-container">
+        <div class="topbar-content">
+            <div class="topbar-left">
+                <a href="https://www.google.com.br/maps/place/EEEP+Jos%C3%A9+de+Barcelos/@-3.835977,-38.5021008,17z/data=!3m1!4b1!4m6!3m5!1s0x7c751d4bc75b055:0xdd1f68422919cd8d!8m2!3d-3.8359824!4d-38.4995259!16s%2Fg%2F1td42q52?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D" class="topbar-link"><i class="bx bx-trip"></i> Nossa Localização</a>
+                <a href="tel:+01234567890" class="topbar-link"><i class="bx bx-phone"></i> 2345-6543<a>                      
+                <a href="mailto:@gmail.com" class="topbar-link"><i class="bx bxs-envelope"></i> empmarketing@gmail.com</a>
+            </div>
+            <div class="topbar-right">
+                <button href="#login" class="button"><a href="pagina02.html" class="button"><i class="bx bxs-user"></i>    Login</a></button>
+            </div>
         </div>
-       
-        <div class="box">
-            <span>5+</span>
-            <h3>Projetos completos</h3>
-        </div>
-
-      </div>
-
-      </div>
-
+    </div>
     </section>
 
-     <!--about section ends-->
+</header>
 
-<!--education section starts-->
-<section class="education" id="education">
-
-<h1 class="heading"> Meus <span>Trabalhos</span></h1>
-
-<div class="box-container">
-
-    <div class="box">
-       <i class="fas fa-graduation-cap"></i>
-       <span>2024</span>
-       <h3>Front-end</h3>
-       <p>Atividade realizada em aula do curso, feito com html e css.</p>
-
+    <div class="Persona" id="#persona">
+        <div class="persona-content">
+            <h1>Conheça a <span>CHIMEIA</span>!</h1>
+            <p>Bem-vindo à era da comunicação inteligente! <span class="span">CHIMEIA</span> é a inteligência artificial desenvolvida para revolucionar o atendimento ao cliente da sua empresa. Projetada especialmente para o setor de automação de marketing, ela está pronta para otimizar a experiência de seus usuários através de <span>chatbots</span> interativos em seu site ou redes sociais.</p>
+            <button href="#persona" class="button-chime"><a href="#chatchat" class="button-chime"><i class="#"></i>Converse com a CHIMEIA</a></button>
+        </div>
+        <div class="persona-image">
+            <img src="img/persona.jpg" alt="Imagem da Persona">
+        </div>
     </div>
 
-     <div class="box">
-       <i class="fas fa-graduation-cap"></i>
-       <span>2024</span>
-       <h3>Front-end</h3>
-       <p>Trabalho realizado para nota do curso, com html,css e JavaScript.</p>
-       
-    </div>
+    <!--JavaScript-->
+    <script src="JavaScript/visibilitly.js"></script>
 
-      <div class="box">
-       <i class="fas fa-graduation-cap"></i>
-       <span>2024</span>
-       <h3>Front-end</h3>
-       <p>Trabalho para falar sobre determinada matéria, feito com html,css e JavaScript.</p>
-       
-    </div>
+    <!--Ferramentas-->
+    <section>
+    <div class="beneficios">
+        <h1>Nossos <span>Beneficíos</span></h1>
 
-      <div class="box">
-       <i class="fas fa-graduation-cap"></i>
-       <span>2024</span>
-       <h3>Front-end</h3>
-       <p>Página de login de um site com o tema Harry Potter, feito com html,css e JavaScript.</p>
-       
-    </div>
+    <div class="container">
+        
+        <!-- Coluna de Navegação -->
+        <div class="accordion">
+            <a class="accordion-link active" data-tab="tab1">Atendimento Rápido</a>
+            <a class="accordion-link" data-tab="tab2">Geração de Leads</a>
+            <a class="accordion-link" data-tab="tab3">Recomendações Personalizadas</a>
+            <a class="accordion-link" data-tab="tab4">Suporte à Automação</a>
+            <a class="accordion-link" data-tab="tab6">Engajamento Proativo</a>
+        </div>
+    
+        <!-- Coluna de Conteúdo -->
+        <div class="content">
+            <div id="tab1" class="tab-content active">
+                <h1>Atendimento Rápido</h1>
+                <img src="img/tab1.jpg" alt="Imagem Tab 1" />
+                <p><span>Rapidez</span>: Responde dúvidas, fornece informações e orienta os clientes em tempo real, 24 horas por dia.</p>
+            </div>
 
-      <div class="box">
-       <i class="fas fa-graduation-cap"></i>
-       <span>2025</span>
-       <h3>Back-end</h3>
-       <p>Página para inserir livros de uma biblioteca,usando o node.js e o banco de dados my SQL. (PROJETO SOCIAL)</p>
-       
-    </div>
+            <div id="tab2" class="tab-content">
+                <h1>Geração de Leads</h1>
+                <img src="img/tab2.jpg" alt="Imagem Tab 1" >
+                <p><span>Suporte à Automação</span>: Auxilia na configuração de campanhas, esclarecendo dúvidas sobre ferramentas e processos.</p>
+            </div>
 
-       <div class="box">
-       <i class="fas fa-graduation-cap"></i>
-       <span>2024</span>
-       <h3>Back-end</h3>
-       <p>Tarefa do curso para ligar o cadastro do banco de dados usando php</p>
-       
+            <div id="tab3" class="tab-content">
+                <h1>Recomendações Personalizadas</h1>
+                <img src="img/tab3.jpg" alt="Imagem Tab 1" />
+                <p><span>Recomendações</span>: Analisa as interações para oferecer sugestões e conteúdos direcionados, aumentando as chances de conversão.</p>
+            </div>
+
+            <div id="tab4" class="tab-content">
+                <h1>Suporte à Automação</h1>
+                <img src="img/tab4.jpg" alt="Imagem Tab 1" />
+                <p><span>Suporte</span>: Auxilia na configuração de campanhas, esclarecendo dúvidas sobre ferramentas e processos.
+                </p>
+            </div>
+
+            <div id="tab6" class="tab-content">
+                <h1>Engajamento Proativo</h1>
+                <img src="img/tab6.jpg" alt="Imagem Tab 1" />
+                <p><span>Envio de Mensagens Personalizadas:</span> CHIMEIA pode iniciar conversas com base no comportamento do usuário no site, como páginas visitadas ou produtos visualizados.</p>
+                <p><span>Notificações Inteligentes</span>: Envia lembretes sobre promoções, eventos ou conteúdos relevantes diretamente no chat.</p>
+            </div>
+            
+        </div>
     </div>
 </div>
 
+<!--JavaScript-->
+<script src="JavaScript/tabs.js"></script>
+<script src="JavaScript/beneficios.js"></script>
 </section>
 
-<!--education section ends-->
+<!-- Back to Home -->
+<a href="pagina1.html" class="back-to-home"><i class='bx bx-up-arrow-alt'></i></a>
 
-<!--portifolio section starts-->
-<section class="portifolio" id="portifolio">
 
-<h1 class="heading">my <span>portifolio</span></h1>
+<!-- JavaScript -->
+<script src="JavaScript/backtohome.js"></script>
 
-<div class="box-container">
-
-    <div class="box">
-        <a href="Projetos/Os papéis de Shakespeare/">
-      <img src="img/shakespeare.png" alt="#">
-      </a>
+<!-- Chatbot -->
+<div class="chatchat" id="chatbot-container">
+    <div id="chatbot">
+        <div id="chat-header">
+            <h3>Chatbot</h3>
+            <p>Como posso ajudar você?</p>
+        </div>
+        <div id="chat-body">
+            <div id="messages"></div>
+        </div>
+        <div id="chat-footer">
+            <input type="text" id="user-input" placeholder="Digite sua mensagem..." autocomplete="off">
+            <button id="send-btn">Enviar</button>
+        </div>
     </div>
-    
-    <div class="box">
-        <a href="Projetos/Automação de Marketing/">
-        <img src="img/siteautomacao.png" alt="#">
-        </a>
-    </div>
-    
-     <div class="box">
-           <a href="Projetos/Física/index.html">
-          <img src="img/sitefisica.png" alt="Física">
-           </a>
-    </div>
-    
-     <div class="box">
-       <a href="Projetos/HP-login/">
-         <img src="img/login.png" alt="">
-         </a>
-    </div>
-    
-     <div class="box">
-        <a href="Projetos/Cadastro/">
-        <img src="img/cadastro.png" alt="">
-        </a>
-    </div>
-    
-     <div class="box">
-        <a href="Projetos/CRUDPDO/">
-        <img src="img/crud.png" alt="">
-        </a>
-    </div>
-    
-
+    <button id="chat-toggle">💬</button>
 </div>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const chatbot = document.getElementById("chatbot");
+    const toggleButton = document.getElementById("chat-toggle");
+    const messagesContainer = document.getElementById("messages");
+    const userInput = document.getElementById("user-input");
+    const sendBtn = document.getElementById("send-btn");
+
+    // Abrir/fechar o chatbot
+    toggleButton.addEventListener("click", () => {
+        chatbot.style.display = chatbot.style.display === "block" ? "none" : "block";
+    });
+
+    // Função para obter resposta do bot
+    const getBotResponse = async (userMessage) => {
+        try {
+            const response = await fetch("http://localhost:3000/api/chat", {
+                method: "POST", // Enviar com o método POST
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ message: userMessage }), // Enviar a mensagem do usuário
+            });
+
+            const data = await response.json();
+            return data.reply; // Retorna a resposta do bot
+        } catch (error) {
+            console.error("Erro ao obter resposta do bot:", error);
+            return "Desculpe, ocorreu um erro. Tente novamente mais tarde.";
+        }
+    };
+
+    // Função para criar mensagens no chat
+    const createMessage = (text, className) => {
+        const message = document.createElement("div");
+        message.className = `message ${className}`;
+        message.textContent = text;
+        messagesContainer.appendChild(message);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    };
+
+    // Enviar mensagens
+    sendBtn.addEventListener("click", async () => {
+        const userMessage = userInput.value.trim();
+        if (userMessage) {
+            createMessage(userMessage, "user");
+            const botResponse = await getBotResponse(userMessage);
+            setTimeout(() => createMessage(botResponse, "bot"), 500);
+            userInput.value = "";
+        }
+    });
+
+    // Enviar mensagem ao pressionar "Enter"
+    userInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+            sendBtn.click();
+        }
+    });
+});
+</script> */
+
+<!-- Estilos do Chatbot -->
+<style>
+#chatbot {
+    display: none;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#chat-toggle {
+    width: 60px;
+    height: 60px;
+    background: #ff00bf;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#chat-toggle:hover {
+    background: #b100d4;
+}
+
+#chat-header {
+    background: linear-gradient(-90deg, #9a56ff 0%, #e36cd9 100%);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#chat-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background: #f9f9f9;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.message.user {
+    align-self: flex-end;
+    background: #a81488fa;
+    color: white;
+}
+
+.message.bot {
+    align-self: flex-start;
+    background: #f1f1f1;
+    color: #333;
+}
+
+#chat-footer {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background: #fff;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#send-btn {
+    padding: 10px 15px;
+    background: linear-gradient(-90deg, #9a56ff 0%, #e36cd9 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#send-btn:hover {
+    background: #d400c9;
+}
+</style>
+
+<!--Ferramentas-->
+<section class="what-we-do">
+    <h1>Conheça nossas <span>Ferramentas</span></h1>
+    <p>Descubra como nossas ferramentas de <span>automação de marketing</span> podem transformar sua estratégia!<style>p{font-family:'Poppins'; font-size: 17px ;} </style></p>
+    <div class="card-container">
+      <div class="card">
+
+        <div class="icon"><i class="bx bx-pin"></i></div><hr>
+        <h2>Engajamento</h2>
+        <p>Aumentar a taxa de conversão e o engajamento ao cliente.</p>
+        <button href='#login' class="leia-mais"><a href="pagina02.html" class="bbtt"><strong>Tenha seu Dashboard</strong></a></button>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="bx bx-brain"></i></div><hr>
+        <h2>Insights</h2>
+        <p>Obter Insights detalhados sobre os clientes.</p>
+        <button href='#login' class="leia-mais"><a href="pagina02.html" class="bbtt"><strong>Tenha seu Dashboard</strong></a></button>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="bx bxs-bulb"></i></div><hr>
+        <h2>Tempo</h2>
+        <p>Reduzir Tempo gasto em tarefas, aumentando a flexibilidade.</p>
+        <button href='#login' class="leia-mais"><a href="pagina02.html" class="bbtt"><strong>Tenha seu Dashboard</strong></a></button>
+      </div>
+
+        <style>
+          .bbtt{
+            text-decoration: none;
+            color: white;
+          }
+        </style>
+
+    </div>
+  </section>
+<script src="JavaScript/ferramentas.js"></script>  
+ 
+</script> 
+
+<!--Formulario-->
+<section class="form-container" id="contato">
+    <div class="container">
+        <form>
+            <h1>Entre em <span>contato</span></h1>
+            <p>Preencha o formulário abaixo e entraremos em contato com você</p>
+
+            <div class="input-single">
+                <input type="text" name="nome" id="nome-box" class="input" autocomplete="off" required>
+                <label for="nome-box">Seu nome completo</label>
+            </div>
+
+            <div class="input-single">
+                <input type="email" name="email" id="email-box" class="input" autocomplete="off" required>
+                <label for="email-box">Seu email</label>
+            </div>
+
+            <div class="input-single">
+                <input type="text" name="telefone" id="tel-box" class="input" autocomplete="off" required>
+                <label for="tel-box">Seu telefone</label>
+            </div>
+
+            <div class="btn">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+    <style>
+        form h1{
+            color: black;
+        }
+    </style>
 </section>
 
-<!--portifolio section ends-->
+<!--Feedbacks-->
+<div class="testimonials">
+  <div class="inner">
+    <h1><span>Feedbacks</span></h1>
+    <div class="border"></div>
 
-<!--contact section starts-->
-<section class="contact" id="contact">
-    <h1 class="heading"> <span>contato</span></h1>
-    
-<div class="row">
-    <div class="content">
-       <h3 class="title">Informações para contato</h3>
+    <div class="row">
+      <div class="col">
+        <div class="testimonial">
+          <!-- Ícone de citação no canto superior esquerdo -->
+          <i class='bx bxs-quote-left'></i>
+          <img src="img/p1.png" alt="">
+          <div class="name">Felipe Souza</div>
+          <div class="stars">
+            <i class='bx bxs-star' style='color:#ffee00'></i>
+            <i class='bx bxs-star' style='color:#ffee00'></i>
+            <i class='bx bxs-star' style='color:#ffee00'></i>
+            <i class='bx bxs-star' style='color:#ffee00'></i>
+            <i class='bx bx-star'></i>
+          </div>
+          <p>"Plataforma completa e intuitiva, com ótimas ferramentas e suporte excepcional. Recomendo!"</p>
+        </div>
+      </div>
 
-       <div class="info">
-        <h3> <i  class="fas fa-envelope">juliafarias036@gmail.com</i></h3>
-        <h3> <i  class="fas fa-phone"></i>+55 (85)85233216</h3>
-        <h3> <i  class="fas fa-map-marker-alt"></i>Fortaleza, Ceará</h3>
-       </div>
+      <div class="col">
+        <div class="testimonial">
+          <i class='bx bxs-quote-left'></i>
+          <img src="img/p2.png" alt="">
+          <div class="name">Lilian Gomes</div>
+          <div class="stars">
+            <i class='bx bxs-star' style='color:#ffee00'></i>
+            <i class='bx bxs-star' style='color:#ffee00'></i>
+            <i class='bx bxs-star' style='color:#ffee00'></i>
+            <i class='bx bxs-star' style='color:#ffee00'></i>
+            <i class='bx bxs-star' style='color:#ffee00'></i>
+          </div>
+          <p>"Fácil de usar e com bons tutoriais. Sugiro mais templates de campanhas, mas já vejo ótimos resultados."</p>
+        </div>
+      </div>
 
-   <form action="">
-
-    <input type="text" placeholder="Nome" class="box">
-    <input type="email" placeholder="email" class="box">
-    <input type="text" placeholder="projeto" class="box">
-    <textarea name="" id="" cols="30" class="box message" placeholder="mensagem"></textarea>
-    <button type="submit" class="btn"> Enviar <i class="fas fa-paper-plane"></i></button>
-
-   </form>
-   </div>
+      <div class="col">
+        <div class="testimonial">
+          <i class='bx bxs-quote-left'></i>
+          <img src="img/p3.png" alt="">
+          <div class="name">Karina Melo</div>
+          <div class="stars">
+            <i class='bx bxs-star' style='color:#ffee00'></i>
+            <i class='bx bxs-star' style='color:#ffee00'></i>
+            <i class='bx bxs-star' style='color:#ffee00'></i>
+            <i class='bx bxs-star' style='color:#ffee00'></i>
+            <i class='bx bx-star'></i>
+          </div>
+          <p>"Ferramentas incríveis, personalização avançada e análise de dados em tempo real. Excelente!"</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+  <script src="JavaScript/testimonials.js"></script>
 
-</section>
+     <!-- Footer -->
+     <footer>
+      <div class="container">
+          <!-- Coluna Contato -->
+          <div class="col">
+              <h3>Contato</h3>
+              <p>Email: empmarketing@empresa.com</p>
+              <p>Telefone: 2345-6543</p>
+              <p>Endereço: Rua Angélica Gurgel, 369 - Fortaleza, CE</p>
+          </div>
 
-<!--contact section ends-->
+          <!-- Coluna Links Úteis -->
+          <div class="col">
+              <h3>Links Úteis</h3>
+              <a href="#sobre">Automação de Marketing</a>
+              <a href="#api">Integração com APIs</a>
+              <a id="#persona">Sobre Nós</a>
+              <a href="#parcerias">Parcerias</a>
+          </div>
 
-<!--scroll top button-->
+              <!-- Redes Sociais -->
+        <div class="col">
+          <h3>Redes Sociais</h3>
+          <div class="social-icons">
+              <a href="https://www.facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
+                  <i class="bx bxl-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+                  <i class="bx bxl-instagram"></i>
+              </a>
+              <a href="https://www.twitter.com" target="_blank" class="social-icon" aria-label="Twitter">
+                  <i class="bx bxl-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
+                  <i class="bx bxl-linkedin"></i>
+              </a>
+          </div>
+      </div>
+      
+          <!-- Formulário de Newsletter -->
+          <div class="col">
+              <h3>Receba Nossas Novidades</h3>
+              <form action="#" method="post">
+                  <input type="email" placeholder="Digite seu email" required>
+                  <button type="submit">Cadastrar</button>
+              </form>
+          </div>
+         
+          <!-- Mapa -->
+          <div class="col">
+              <h3>Localização</h3>
+              <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12731.331599204255!2d-38.5021008!3d-3.835977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c751d4bc75b055%3A0xdd1f68422919cd8d!2sEEEP%20Jos%C3%A9%20de%20Barcelos!5e0!3m2!1spt-BR!2sbr!4v1681145796784"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
 
-<a href="#home" class="top">
-    <img src="img/foguete-removebg-preview.png" alt=""  width="100" height="50">
-</a>
-
-
-
-
-
-
-
-
-
-
-   <!--jquery cdn link-->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-   <script src="script.js"></script>
+      <div class="powered">
+          Powered by <strong>ChimeIA Automação</strong>. © 2024. Todos os direitos reservados.
+      </div>
+  </footer>
 
 </body>
-</html>
+</html> 

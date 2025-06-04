@@ -1,0 +1,112 @@
+ /* Estilo geral da seção Feedbacks */
+ .testimonials {
+  font-family: 'Poppins';
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
+  opacity: 0; /* Invisível no início */
+  transform: translateY(50px); /* Levemente deslocada */
+  transition: opacity 0.6s ease, transform 0.6s ease; /* Suave transição */
+}
+
+.testimonials.visible {
+  opacity: 1; /* Visível */
+  transform: translateY(0); /* Retorna à posição original */
+}
+
+.testimonials h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #274046;
+}
+
+.testimonials .border {
+  width: 80px;
+  height: 4px;
+  background-color: #000000;
+  margin: 0 auto 1.5rem;
+}
+
+/* Container dos cards */
+.testimonials .row {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebra de linha para responsividade */
+  justify-content: space-between; /* Espaçamento uniforme entre os cards */
+  gap: 1rem; /* Espaçamento entre os cards */
+}
+
+/* Estilo individual dos cards */
+.testimonials .col {
+  background: linear-gradient(195deg, #cd73df, #e36cd9);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: calc(30% - 1rem); /* Cada card ocupa 30% com margem entre eles */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.testimonials .col:hover {
+  transform: scale(1.05); /* Amplia levemente */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Destaque na sombra */
+}
+
+/* Responsividade: Cards em 2 colunas em telas médias */
+@media (max-width: 768px) {
+  .testimonials .col {
+    width: calc(45% - 1rem); /* Cada card ocupa 45% com margem */
+  }
+}
+
+/* Responsividade: Cards em 1 coluna em telas pequenas */
+@media (max-width: 480px) {
+  .testimonials .col {
+    width: 100%; /* Cada card ocupa a largura total */
+  }
+}
+
+/* Imagem do autor */
+.testimonials .testimonial img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+/* Nome do autor */
+.testimonials .testimonial .name {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Estrelas */
+.testimonials .stars {
+  margin-bottom: 1rem;
+}
+
+/* Texto do feedback */
+.testimonials .testimonial p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+/* Adicionando o ícone de citação no canto superior esquerdo do testimonial */
+.testimonials .testimonial {
+  position: relative; /* Necessário para posicionamento absoluto */
+  padding-top: 2rem; /* Adiciona um espaço superior para não colidir com o ícone */
+}
+
+/* Estilo do ícone de citação */
+.testimonials .testimonial i.bx.bxs-quote-left {
+  position: absolute; /* Posicionamento absoluto em relação ao contêiner */
+  top: -10px; /* Ajuste a distância do topo */
+  left: -10px; /* Ajuste a distância da esquerda */
+  font-size: 2rem; /* Tamanho do ícone */
+  color: #faffff; /* Cor do ícone */
+}

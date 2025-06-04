@@ -1,0 +1,51 @@
+/* Topbar Styles */
+.topbar-container {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    position: fixed; /* Fixa no topo da página */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o topbar fique acima de outros elementos */
+}
+
+.topbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-left,
+.topbar-right {
+    display: flex;
+    gap: 1rem;
+}
+
+.topbar-link {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: color 0.3s ease;
+}
+
+.topbar-link i {
+    color: #A911D4;
+}
+
+.topbar-link:hover {
+    color: #007bff;
+}
+
+.topbar-link box-icon {
+    font-size: 1.5rem;
+}
+
+/* Adicionando um fundo semitransparente ao fixar o Topbar */
+.topbar-container.fixed {
+    background-color: rgba(248, 249, 250, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

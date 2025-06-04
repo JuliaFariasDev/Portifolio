@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/pagina02.css">
+    <title>Tela de Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https//cdnjs.cloudfare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+ <body>  
+  
+    <!--Tela de Login-->
+    <div class="container" id="container">  
+       <div class="form-container sign-up"> 
+         <form action="" method="POST">
+            <h1>Crie uma Conta</h1>
+            <div class="social-icons">
+               <a href="#" class="icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYhJREFUSEvN1T9IVmEUBvCf2dLQ0CBECkHRIgqtCqVFIf1BQXG1pUklRGgQHBXBpSFqa6ucGougIB1KB5GgtTWMSnQuze4rR/n49NJ3v5vSXS6X+57nOc95zjlvg0N+Gg4Z35ETLOBySVXzuLKLUa1guyT4Ptz/guAXnuAFPrHjWwf6cCdH8V7if1PwDbdwCjM4h+P4nL2n8B1zaK4iqolgMwy/iMc5mU7iDZZCWSEPnuMhPmACpzF2ANFN3MZwxb+aFPTgLgZxIsr0pSrThPkO03hblKAlgi+gF6lkrw5Q8APpzHo9BO9xNpOfzG4PQ69GN7WiEWs4n5VvoyjBNdyL7FPsctS6DWlaE2hq2zT9s2F2IZOf4hEWKzL7inGsZuADGMWN8Cp9FyJ4GV30OqdFf+N+pnAlvKo8VlMXjURZjoXBKfO0xH5GOR5kCpsyg5/hTD2D1hWBl3ASaS4+Ygud6MdQ2VVR73KtqUT1gqe4XII0ld1lkGOir+ddOCWx94cf+Z38zxX8AdXuTxk7YcaFAAAAAElFTkSuQmCC"/>
+                <!--whatsApp-->
+                </a>
+                <a href="#" class="icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZBJREFUSEvt1D9IllEUBvCfRBgpurQ0pIMOBv6BDKlBgsgGF9cGt4xamhRqqixIKoJoicLWyK2hoRIi1EKIhij3xlpVSIK
+                oe+B+8PLiy/cuHy6e8d5zzvOc8zz3tmlxtLW4v32AphvekxUdxEXMoS9T/IEFPMffprQLC  eUJjuIthiqafMQ4/tUFKQIcwBpO5eJFvMdPnMcMzuLbLs1H8RAv8Kx4XwS4gif58gKWSo26sFnBfALvcB/XqgC+ YjixXMGZmisYxBGcxAO8xNOs02r0KE6w
+                k4RsT2fz6eJWAWA7FXeUAD9jDK8wtQuZ32maw2WALXTiDm40AdhAsI9VDmS3TSetPmEZf3C3DBCsYtT15KTTBYBwTRgg4hFGcpMQvhG1NLiKx7nidrLizdLoJ/Aln8Vd5DTiXAa9h+tVIodLvqfHdCwnhOVep4LQJqx7Gd3pAYYm/fhVxwjlh9aTmr1JFj1eUR
+                ziTeJDneZlDRo1h3AJs+jNh2GA8HmsJgSuHXvy2dVmVydxf4KmW2r5iv4DnmVAGc+aYBMAAAAASUVORK5CYII="/>
+               <!--GOOGLE-->
+               </a>
+               <a href="#" class="icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAeNJREFUSEvF1T+ozmEUB/DPdUlSN5KUwcLtJv/jjpiMZHCVYjESxSCDlAwGJYrproRBYpJFuotYkKRkUCYWhZL/z9Hze3s8fr/cN73dM73vOec533O+589vyIBlaMDxzRjAchzFZqymM5GfeIYpnMfLmpG2Cg5k5zl90vcVBzFZvqsBNuIhZvUZvHH/hk140ihqgJvY2Ufwt1iDCVzM724k2nZ1AbzGshaANziD51iEMRxH+AdAZP0ov3uFFV0AHzG/AribM/qAxdn2DqtwB59SzxZgSbaF30gbQPD+vQoegUZzsL3Yipic+ynLyxjOE1Q+iz70BqTsQSi/VABncSxlfgkxXaUE54dwG9sLQyQ5u62CUMaolbIft3LGsQ+lPMU6nEx7cqow/MiV/VaVFcTvMJYSc30tUXMPayvb4wS+ASdSwNOVrRe3HtPgt5TgeR8u4HBli809kivcUdg6exA+NUBUtB7zsAdbcqBo8tU0unNbmvw5+/9FUSjaxjRmPZYvKCkl7lTQt7TSv08VL2x0NUVxrHpLUjUuNrRctG1V4ObvC6zsArieguzueDhd9RXEzrRSNI4H/3ns4mDGCLcChHKg57oBLj84ccy6pPzgnEsjHYfuD5mxT+Z0G/pPv4FX8AszSlgZRYBdrAAAAABJRU5ErkJggg=="/>
+                <!--instagram-->
+               </a>
+               <a href="#" class="icon">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAShJREFUSEvt1U0rRkEYxvHfQykrsrFSXoqFKFl5KQsfQ76AslA2VvZKSfkG8jFkIUXWkuRtZaVsWCg0NUfTOFHPeLJg6tQ953Rf/3uue2ZOQ4tHo8X66gCDeMXNT8BzwDaWo/AmVkshKWAE55lgP25LIN8BBkqtyi3awVKseAsrJdWH3LomD8cmX5aK1wGm0RGFn3Ec4wl0xfgJJ+jBLMbQjj18KipfwT16o9AVhmJ8iJkYX2A9Cqb5YWuvYSNdeTOAB3TGp87FeexXH5oBVLkBdIdxtCWkYNVCKWAXi1FkDgcJ4AyjpYBwKEMvqhFW0hcnj+guBYSd9pIATjGZzD+s/6oH1wgXXxjpLgrz4PlbIniEqX9AddD+uEV1R7/o3a/89IsqzpPfAXF0UxkpbL/qAAAAAElFTkSuQmCC"/>
+                <!--linkedin-->
+              </a>
+            </div> <!--social-icons-->    
+             <span>Ou use seu email para registrar</span>
+             <input type="text" id="name" name="name" placeholder="Name" required>
+             <input type="email" id="email" name="email" placeholder="Email" required>
+             <input type="password" id="password" name="password" placeholder="Password" required>
+             <button type="submit" name="register">Cadastre-se</button>
+         </form action="" method="POST">
+       </div><!--form-container sign-up-->
+
+       <div class="form-container sign-in">
+        <form>
+           <h1>Faça Login</h1>
+           <div class="social-icons">
+              <a href="#" class="icon">
+               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYhJREFUSEvN1T9IVmEUBvCf2dLQ0CBECkHRIgqtCqVFIf1BQXG1pUklRGgQHBXBpSFqa6ucGougIB1KB5GgtTWMSnQuze4rR/n49NJ3v5vSXS6X+57nOc95zjlvg0N+Gg4Z35ETLOBySVXzuLKLUa1guyT4Ptz/guAXnuAFPrHjWwf6cCdH8V7if1PwDbdwCjM4h+P4nL2n8B1zaK4iqolgMwy/iMc5mU7iDZZCWSEPnuMhPmACpzF2ANFN3MZwxb+aFPTgLgZxIsr0pSrThPkO03hblKAlgi+gF6lkrw5Q8APpzHo9BO9xNpOfzG4PQ69GN7WiEWs4n5VvoyjBNdyL7FPsctS6DWlaE2hq2zT9s2F2IZOf4hEWKzL7inGsZuADGMWN8Cp9FyJ4GV30OqdFf+N+pnAlvKo8VlMXjURZjoXBKfO0xH5GOR5kCpsyg5/hTD2D1hWBl3ASaS4+Ygud6MdQ2VVR73KtqUT1gqe4XII0ld1lkGOir+ddOCWx94cf+Z38zxX8AdXuTxk7YcaFAAAAAElFTkSuQmCC"/>
+               <!--whatsApp-->
+               </a>
+               <a href="#" class="icon">
+               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZBJREFUSEvt1D9IllEUBvCfRBgpurQ0pIMOBv6BDKlBgsgGF9cGt4xamhRqqixIKoJoicLWyK2hoRIi1EKIhij3xlpVSIK
+               oe+B+8PLiy/cuHy6e8d5zzvOc8zz3tmlxtLW4v32AphvekxUdxEXMoS9T/IEFPMffprQLC  eUJjuIthiqafMQ4/tUFKQIcwBpO5eJFvMdPnMcMzuLbLs1H8RAv8Kx4XwS4gif58gKWSo26sFnBfALvcB/XqgC+ YjixXMGZmisYxBGcxAO8xNOs02r0KE6w
+               k4RsT2fz6eJWAWA7FXeUAD9jDK8wtQuZ32maw2WALXTiDm40AdhAsI9VDmS3TSetPmEZf3C3DBCsYtT15KTTBYBwTRgg4hFGcpMQvhG1NLiKx7nidrLizdLoJ/Aln8Vd5DTiXAa9h+tVIodLvqfHdCwnhOVep4LQJqx7Gd3pAYYm/fhVxwjlh9aTmr1JFj1eUR
+               ziTeJDneZlDRo1h3AJs+jNh2GA8HmsJgSuHXvy2dVmVydxf4KmW2r5iv4DnmVAGc+aYBMAAAAASUVORK5CYII="/>    
+              <!--GOOGLE-->
+               </a>  
+               <a href="#" class="icon">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAeNJREFUSEvF1T+ozmEUB/DPdUlSN5KUwcLtJv/jjpiMZHCVYjESxSCDlAwGJYrproRBYpJFuotYkKRkUCYWhZL/z9Hze3s8fr/cN73dM73vOec533O+589vyIBlaMDxzRjAchzFZqymM5GfeIYpnMfLmpG2Cg5k5zl90vcVBzFZvqsBNuIhZvUZvHH/hk140ihqgJvY2Ufwt1iDCVzM724k2nZ1AbzGshaANziD51iEMRxH+AdAZP0ov3uFFV0AHzG/AribM/qAxdn2DqtwB59SzxZgSbaF30gbQPD+vQoegUZzsL3Yipic+ynLyxjOE1Q+iz70BqTsQSi/VABncSxlfgkxXaUE54dwG9sLQyQ5u62CUMaolbIft3LGsQ+lPMU6nEx7cqow/MiV/VaVFcTvMJYSc30tUXMPayvb4wS+ASdSwNOVrRe3HtPgt5TgeR8u4HBli809kivcUdg6exA+NUBUtB7zsAdbcqBo8tU0unNbmvw5+/9FUSjaxjRmPZYvKCkl7lTQt7TSv08VL2x0NUVxrHpLUjUuNrRctG1V4ObvC6zsArieguzueDhd9RXEzrRSNI4H/3ns4mDGCLcChHKg57oBLj84ccy6pPzgnEsjHYfuD5mxT+Z0G/pPv4FX8AszSlgZRYBdrAAAAABJRU5ErkJggg=="/>
+               <!--instagram-->
+              </a>
+              <a href="#" class="icon">
+             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAShJREFUSEvt1U0rRkEYxvHfQykrsrFSXoqFKFl5KQsfQ76AslA2VvZKSfkG8jFkIUXWkuRtZaVsWCg0NUfTOFHPeLJg6tQ953Rf/3uue2ZOQ4tHo8X66gCDeMXNT8BzwDaWo/AmVkshKWAE55lgP25LIN8BBkqtyi3awVKseAsrJdWH3LomD8cmX5aK1wGm0RGFn3Ec4wl0xfgJJ+jBLMbQjj18KipfwT16o9AVhmJ8iJkYX2A9Cqb5YWuvYSNdeTOAB3TGp87FeexXH5oBVLkBdIdxtCWkYNVCKWAXi1FkDgcJ4AyjpYBwKEMvqhFW0hcnj+guBYSd9pIATjGZzD+s/6oH1wgXXxjpLgrz4PlbIniEqX9AddD+uEV1R7/o3a/89IsqzpPfAXF0UxkpbL/qAAAAAElFTkSuQmCC"/>
+               <!--linkedin-->
+              </a>
+           </div> <!--social-icons-->
+           <span>Ou use sua senha de email</span>
+           <input type="email" id="email" name="email" placeholder="Email" required>
+           <input type="password" id="password" name="password" placeholder="Password" required>
+           <a href="Esqueceu sua senha?"></a>
+           <button type="submit" name="register">Faça Login</a></button>
+       </form>
+     </div><!--form-container sign-in-->
+
+     <div class="toggle-container">
+       <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Bem vindo de volta!</h1>
+            <p>Faça Login e tenha acesso ao seu <strong>Dashboard</strong> profissional.</p>
+            <button class="hidden" id="login">Faça Login</button>
+          </div><!--toggle-panel toggle-left-->
+       
+       <div class="toggle-panel toggle-right"> 
+         <h1>Olá, Amigo</h1>
+         <p>Registre-se para ter acesso ao seu <strong>Dashboard</strong> profissional.</p>
+         <button class="hidden" id="register">Cadastre-se</button>
+       </div><!--toggle-panel toggle-right-->
+     </div><!--toggle-->      
+     </div><!--toggle-container-->
+
+   </div> <!--container-->
+    </div> <!--container-->
+     <script src="JavaScript/script.js"></script>
+</body>
+</html> 

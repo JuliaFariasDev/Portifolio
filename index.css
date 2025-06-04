@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+.background-image {
+    background-image: url('img/coletive2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.texts {
+    position: relative;
+    z-index: 100px;
+    text-align: center;
+}
+
+.text {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem; /* Espaço entre o título e o parágrafo */
+    text-align: center; /* Centraliza o texto */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    height: 60vh;
+    padding-top: 248px;
+}
+
+.text h1 {
+    font-size: 65px; /* Tamanho do título */
+}
+
+.texto {
+    max-width: 800px; /* Largura máxima do parágrafo */
+    margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    line-height: 1.5; /* Altura da linha */
+    color: #eaeaea; /* Cor do texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Sombra no texto */
+    font-family: 'Poppins', sans-serif;
+}
+
+
+span{
+    background: linear-gradient(-90deg, #9a56ff 0%, #e36cd9 90%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+html, body {
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    background-color: black;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.overlay:hover {
+    opacity: 0.5;
+}
+/* Header */
+.header-container {
+    display: flex;
+    justify-content: center; /* Ajusta para que a logo e o menu fiquem distribuídos */
+    align-items: center;
+    position: fixed;
+    width: 100%; /* Garantir que ocupe toda a largura */
+    top: 0;
+    padding: 1rem 2rem; /* Ajuste no padding para não ser tão grande */
+    background-color: #00000005; /* Pode colocar uma cor de fundo se desejar */
+    z-index: 1000; /* Garantir que o header fique acima de outros elementos */
+}
+
+/* Logo */
+.logo img {
+    width: 220px;
+}
+
+/* Navegação */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-family: 'Poppins';
+}
+
+nav a {
+    color: #ffffff;
+    text-shadow: black 1px 1px 2px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f309b5;
+    background-color: transparent;
+}
+
+/* Cor padrão dos links */
+.nav-link {
+    color: #ffffff; /* Cor padrão: branco */
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Cor preta quando a seção Home não estiver visível */
+.nav-link.active {
+    color: #000000; /* Cor preta */
+    text-shadow: white 1px 1px 2px;
+}
+
+.nav-link:hover{
+    color: #f309b5;
+    background-color: transparent;
+}
+/* Evita que o conteúdo fique atrás do header fixo */
+
+.button {
+    padding: 0.5rem 1.2rem;
+    background: linear-gradient(-90deg, #9a56ff 0%, #e36cd9 100%);
+    color: #fff;
+    border-radius: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do botão */
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+/* Estilos da Persona */
+.Persona {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 4rem 1 rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    opacity: 0; /* Começa invisível */
+    transform: translateY(50px); /* Começa um pouco abaixo */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Animação suave */
+}
+
+.Persona.visible {
+    opacity: 1; /* Quando visível, fica opaco */
+    transform: translateY(0); /* Move para a posição original */
+}
+
+.persona-content {
+    max-width: 800px; /* Define uma largura máxima para o texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona espaço interno */
+    text-align: justify; /* Justifica o texto para alinhamento uniforme */
+    font-family: 'Poppins', sans-serif; /* Consistência na fonte */
+    color: #2e2d2d; /* Cor do texto */
+    line-height: 1.8; /* Melhor espaçamento entre linhas */
+}
+
+.Persona h1 {
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.Persona h1 span {
+    background: linear-gradient(-90deg, #9a56ff 0%, #e36cd9 90%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.Persona p {
+    color: #2e2d2d;
+    font-size: 1.2rem;
+    margin-bottom: 43px;
+    line-height: 1.8;
+}
+
+/* Estilo da imagem */
+.persona-image {
+    flex-shrink: 0;             
+    width: 600px;               /* Define um tamanho fixo para a imagem */
+    height: auto;               
+}
+
+.persona-image img {
+    width: 70%;                
+    height: auto;               
+    border-radius: 80px;         
+}
+
+.button-chime {
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-weight: bold;
+    background: linear-gradient(-90deg, #9a56ff 0%, #e36cd9 100%);
+    text-decoration: none;
+    border: none;
+    border-radius: 40px;
+    padding: 1.2rem 0.4rem;
+    color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+    box-shadow: 0 4px 7px #FFD984; /* Sombra leve */
+    outline: none; 
+    cursor: pointer;
+}
+
+.button-chime:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do botão */
+    background-color: #B571AA; /* Muda a cor de fundo */
+
+}
+
+.button-chime:active {
+    transform: scale(0.98); /* Leve diminuição do tamanho */
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    
+}
+.beneficios {
+    opacity: 0; /* Invisível no início */
+    transform: translateY(50px); /* Levemente deslocada para baixo */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transição suave */
+}
+
+/* Quando a classe .visible for adicionada, a animação acontece */
+.beneficios.visible {
+    opacity: 1; /* Torna o elemento visível */
+    transform: translateY(0); /* Volta ao lugar original */
+}
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+/* Coluna das tabs (Accordion) */
+.accordion {
+    flex:  0 0 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Poppins';
+}
+
+.accordion-link {
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.accordion-link.active {
+    background: #e36cd9;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 3, 204, 0.3);
+}
+
+.accordion-link:hover {
+    background: #9a56ff;
+    color: #ffffff;
+}
+
+/* Coluna de conteúdo */
+.content {
+    flex: 0 0 50%; /* Largura reduzida para 60% */
+    background: #ffffff;
+    padding: 4rem 1rem; /* Diminuindo o padding */
+    margin: 0 5px; /* Diminuindo as margens laterais */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cada tab individual */
+.tab-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Transição suave */
+}
+
+.tab-content.active {
+    display: block;
+    opacity: 1;
+    scroll-margin-top: 120px; /* Espaçamento para compensar o cabeçalho fixo */
+}
+
+/* Imagem das tabs */
+.content img {
+    display: block;               /* Remove o espaço extra abaixo da imagem (devido ao display inline) */
+    margin-left: auto;            /* Alinha a imagem à esquerda automaticamente */
+    margin-right: auto; 
+    max-width: 50%;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+/* Título das tabs */
+.tab-content h1 {
+    font-size: 28px;
+    color: #ae41d9;
+    margin-bottom: 15px;
+}
+
+/* Texto das tabs */
+.tab-content p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: 'Poppins';
+}
+
+/* Botão */
+.tab-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #e36cd9;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s ease, transform 0.2s ease;
+}
+
+.tab-content .btn:hover {
+    background: #9a56ff;
+    transform: translateY(-3px);
+}
+
+ /* Estilo do botão "Back to Home" */
+ .back-to-home {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background-color: #4158D9;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-home.show {
+    opacity: 1;
+}
+
+.back-to-home:hover {
+    background-color: #9E14D9;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.back-to-home i {
+    font-size: 24px;
+}
+
+/*Formulário*/
+
+
+/* Estilo da seção "What We Do" */
+.what-we-do {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    padding: 4rem 1rem;
+    opacity: 0; /* Invisível no início */
+    transform: translateY(50px); /* Levemente deslocada */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Suave transição */
+    font-family: 'Poppins' ;
+  }
+  
+  .what-we-do.visible {
+    opacity: 1; /* Visível */
+    transform: translateY(0); /* Retorna à posição original */
+  }
+  
+  .what-we-do h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #000000;
+  }
+  
+  /* Container dos cards */
+  .card-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 1.5rem; /* Espaço entre os cards */
+    flex-wrap: wrap; /* Quebra linha em telas menores */
+    margin-top: 2rem;
+    width: 100%; /* Garante que o container ocupe toda a largura disponível */
+  }
+  
+  /* Estilo dos cards */
+  .card {
+    background: linear-gradient(-90deg, #c40ebb 40%, #e064ff8f 110%) ;
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 270px; /* Largura padrão */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.308);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  /* Efeito hover avançado */
+  .card:hover {
+    transform: scale(1.1) rotate(2deg); /* Amplia e rotaciona */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Destaque na sombra */
+  }
+  
+  /* Efeito de iluminação com pseudo-elemento */
+  .card::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.6s ease;
+    z-index: 0;
+  }
+  
+  .card:hover::before {
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 150%;
+  }
+  
+  /* Estilo interno dos cards */
+  .card .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .leia-mais {
+    background: linear-gradient(-90deg, #9a56ff 0%, #e36cd9 100%);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    position: relative;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .leia-mais:hover {
+    background-color: #ffffff;
+  }
+  
+  /* Media query para ajustar os cards em telas menores */
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 1.5rem); /* 2 cards por linha em telas menores */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%; /* 1 card por linha em telas muito pequenas */
+    }
+  }
+  
+/*Rodapé*/
+footer {
+    background-color: #a921f8;
+    color: #fff;
+    padding: 40px px;
+    position: relative;
+    font-family: 'Poppins';
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    flex: 1;
+    margin: 24px;
+    min-width: 200px;
+
+}
+
+footer .col h3 {
+    margin-bottom: 10px;
+}
+
+footer .col p, footer .col a {
+    margin: 8px 0;
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer .col a:hover {
+    color: #f0f0f0;
+    text-decoration: underline;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1d2128;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.2);
+    background: #ff00ff;
+}
+
+footer iframe {
+    border: 0;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+footer form input, footer form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+footer form input {
+    background: white;
+    color: rgb(0, 0, 0);
+}
+
+footer form button {
+    background: linear-gradient(-90deg, #9a56ff 0%, #e36cd9 100%);
+    color: white;
+    cursor: pointer;
+}
+
+footer form button:hover {
+    background: #ff68ff;
+}
+
+footer .powered {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    border-top: 1px solid #ffffff;
+    padding-top: 10px;
+}
+
+/* Container principal do chatbot */
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-family: 'Poppins';
+}
